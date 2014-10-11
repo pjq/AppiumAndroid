@@ -1,0 +1,39 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'com.android.support:support-v13:20.0.0'
+    compile('junit:junit:4.11')
+    compile('io.appium:java-client:2.0.0')
+    if (false) {
+
+        compile('io.appium:java-client:2.0.0') {
+            exclude module: 'commons-logging'
+            exclude module: 'commons-codec'
+            exclude module: 'commons-collections'
+            exclude module: 'commons-exec'
+            exclude module: 'commons-io'
+            exclude module: 'commons-lang3'
+            exclude module: 'cssparser'
+            exclude module: 'dom4j'
+            exclude module: 'httpclient'
+            exclude module: 'json'
+//        exclude module: 'maven-artifact'
+//        exclude module: 'maven-artifact-manager'
+//        exclude module: 'maven-error-diagnostics'
+//        exclude module: 'maven-model'
+//        exclude module: 'maven-project'
+//        exclude module: 'maven-settings'
+            exclude module: 'junit'
+//        exclude module: 'android'
+//        exclude module: 'guava'
+            exclude module: 'xml-apis'
+            exclude module: 'serializer'
+            exclude module: 'xercesImpl'
+            exclude module: 'xalan'
+            exclude module: 'cglib'
+            exclude module: 'cglib-nodep'
+//        exclude module: 'xerces'
+        }
+    }
+}
